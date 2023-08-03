@@ -1,0 +1,76 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#image-section{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#image-section image{
+  height: 50px;
+  width: 120px;
+}
+.title-form{
+display: flex;
+margin-bottom: 20px;
+}
+
+.title-form text{
+  color: black;
+  font-size: 1.2em;
+}
+
+#scrollview-modal{
+  height: 600px;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+#login-form{
+  margin: 20px 80px;
+  margin:50px
+}
+
+#form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#form-container input{
+  border: #d8cd0081 solid 1px;
+  border-radius: 15px;
+  margin: 2px;
+}
+
+
+#form-container button{
+  border-radius: 6px;
+}
+
+#misc-section{
+  margin: 0 60px;
+}
+.misc-list{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+  border: #0e339a solid 1px;
+  background-color: #0e339a;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 0;
+}
+
+
+.notice{
+  margin-top: 80px;
+}
+.buttonSubmit{
+  margin-top: 15px;
+}

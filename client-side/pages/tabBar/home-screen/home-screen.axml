@@ -1,0 +1,26 @@
+<view class="container">
+  <view id="header">
+    <image mode="scaleToFill" src="/image/IDEA_logo.jpg"/>
+    <view id="right-header">
+      <icon className="bell" type="CloseOutline" onTap='logOut' />
+    </view>
+  </view>
+<view class="containerCard">
+  <block a:for="{{ listProducts }}" a:for-item="product">
+    <view class="card" data-id="{{product.id}}" key="{{product.id}}">
+      <view>
+        <h3>{{product.name}}</h3>
+      </view>
+      <view>
+        <p>Price: {{product.price}}</p>
+      </view>
+      <view>
+        <p class="category">Category: {{product.Category.name}}</p>
+        <view class="deleteButtonCard" onTap='deleteData' data-id="{{product.id}}">
+        <icon className="delete" type="DeleteOutline" />
+        </view>
+      </view>
+    </view>
+</block>
+</view>
+</view>

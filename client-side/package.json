@@ -1,0 +1,23 @@
+{
+  "name": "productmanagement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ant-design/icons": "^5.2.4",
+    "@antv/my-f2": "^2.1.7",
+    "@vermillionhayate/npm-component-test": "^1.1.0",
+    "antd": "^5.8.1",
+    "antd-mini": "^1.10.5",
+    "jsrsasign": "^10.8.6",
+    "jwt-decode": "^3.1.2",
+    "mini-ali-ui": "^1.4.1",
+    "toastify-js": "^1.12.0"
+  }
+}

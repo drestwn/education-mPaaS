@@ -1,0 +1,29 @@
+<view class="container">
+
+  <view id="header">
+    <image mode="scaleToFill" src="/image/IDEA_logo.jpg" />
+    <view id="right-header">
+      <icon className="bell" type="BellOutline" />
+    </view>
+  </view>
+  <view class="containerCard">
+    <block a:for="{{ listUsers }}" a:for-item="users">
+      <view class="card" data-id="{{users.id}}" key="{{users.id}}" onTap="getUserDetail">
+        <view>
+          <image class="imageProfile" src={{users.image}}/>
+            </view>
+            <view class="dataProfile">
+              <view>
+                <h3>Name: {{users.firstName}}</h3>
+              </view>
+              <view>
+                <text>Email: {{users.email}}</text>
+              </view>
+              <view>
+                <text>Gender: {{users.gender}}</text>
+              </view>
+            </view>
+            </view>
+            </block>
+            </view>
+            </view>

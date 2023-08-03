@@ -1,0 +1,19 @@
+#main-container{
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+#title{
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+#sub-title{
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+#form{
+  margin: 10px 0;
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Suede Tote Bag",
+    "slug": "suede-tote-bag",
+    "description": "A spacious and stylish tote bag made of soft suede leather.",
+    "price": 85000,
+    "mainImg": "https://images.unsplash.com/photo-1448582649076-3981753123b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
+    "categoryId": 1,
+    "authorId": 1
+  },
+  {
+    "id": 2,
+    "name": "Cotton Pillowcase Set",
+    "slug": "cotton-pillowcase-set",
+    "description": "A set of two pillowcases made of 100% organic cotton with a soft and smooth feel.",
+    "price": 25000,
+    "mainImg": "https://images.unsplash.com/photo-1629949009765-40fc74c9ec21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80",
+    "categoryId": 3,
+    "authorId": 1
+  },
+  {
+    "id": 3,
+    "name": "Woolen Scarf",
+    "slug": "woolen-scarf",
+    "description": "A warm and cozy scarf made of high-quality wool with a classic design.",
+    "price": 45000,
+    "mainImg": "https://images.unsplash.com/photo-1457545195570-67f207084966?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2092&q=80",
+    "categoryId": 2,
+    "authorId": 1
+  },
+  {
+    "id": 4,
+    "name": "Ceramic Mug",
+    "slug": "ceramic-mug",
+    "description": "A handmade ceramic mug with a unique design and a comfortable grip.",
+    "price": 18000,
+    "mainImg": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEhAQEg8PFRUVDxAPEBAPDw8PDw8PFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0OFQ8PFSsZFRkrKystLS0rLSstKy0tKysrKy0tLSstKy0rKy0rLTcrNysrNysrKystLSsrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAAAAQMCBAYFB//EADsQAAIBAgEIBggFBAMAAAAAAAABAgMRBAUSITFBUXGRBiIyYXKxE1JTgZKhwdEUM0KC4SNisvBD4vH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAaEQEBAQEAAwAAAAAAAAAAAAAAARFBEiEx/9oADAMBAAIRAxEAPwD9xTATQXAYAIAGAAAAACGAgGBmU0tq52IyxENs4LjKIFs40c6xlJf8kPjiH46l7SHNAdAHP+Ope0jzD8bT9eIFxkPxdP148x/iafrx5oCwEliIevH4kaVSPrLmgNiBDAAAABiuMAABA2AzKkLWaSAYAAAIYAK4DAAEwGAkMTQXAYAAAKTsmxmKup8APm4ytXs8zN7k3Y85j445vT6S26DVlxzT1VwiiWaPDyp1V2oVdj0xlr72dqoLdzPXOK3GXSW4niuvGVdErJ27ilOb3nqpUIP9KJSwsPVjyQxNfBhN7zohJ7z6M8PD1Y/CicqUdy5IYOeDe864rgQaXdyRiVWWx/JAd6XDkPMW5cj5M8TNfqfyOeeLq+0l7nYD72Z/qFGpLZJ82fBlWn7Wr8bXkcmInL2lX31JP6jR6+OJmtb52K4XKMZyzLxvZtZrT1eR4CVO+tt8W2fU6NK1eH7vJjVx7gAMuRpDkzCGkbAAEMAAAAAAAABXABgAAAAACGAgGYq6nwNXM1FofADkRpGTSA0wEMDEibKSJyCI1CMilRkpEEZkplpkZgc1U55HRUOeRFEjnrHTI56wVA68kYiNOrCcnZJ7dByMHSzrp+qyK9XjOlGHptr0kG/7ZZ75I45dK4vsxqP9sYr53Z43JuASbutp96hQS2DalkfYp9JJbaT+JfY7KPSCk+1ePiVvmj5lHBTauqcrb7MVXC20Sg1xVi+0eoo14ySaa06u/gUaPFeiqUnnUpNb464vij7eRsuRqv0c+rPc9vB7S6PtXGAs4oYgsMAAAAAAAAABsAEAwFYzU1PgbMVVofADkRqJlDQGhiADMicjcmTYEKqIyZeoRkQSkQmWkRmEc9QhIvUISIokc9fYdLOasFRKUo3b4MwfSyDhozqZstWayDiwdHTZLTfUlpPWZLyUoJSmk5bFrUf5OvDZPpU3eEUnvelnSmakDFKKehpNbnpGBUfKxuT7XlDVtju4HwMoYG/XjoktKa2M9ofHyhh82WjU9K7ntJYNdH8p+mhaX5kOrNb9zPqOJ46FT8PXhV/S2oVO+D2+49mhFpXGAioYAACGmBmTAbkZtcEjYAgAAAxV1PgbMVdT4Acg0ZRpAaAyMDLJsoycgIVCMi1QjIglMjMtIjMg55kHEvNEpvd/53AEtBzV/uXkQrbCKkfZ6ML+r+2R8Y+50X/MfhYg9SDADaEMDKYDbOfHU7we9dbl/B0oTQHlco0VKLXdY+10exDnh6betL0cuMXbySfvPnYiGiS4op0Unorw3VFP4l/1M9V94AA0hWAYAZcgURqIwEFxg0AAIYAYq6nwNmK3ZfADjGhIaINAAFGGYkbkjDAhUIyK1CMiCUiUkVkyVR/7cg56rOeReoQYDkznrHRI562wCZ93or+ZLwPzR8I+90VXXl4X5okV6cAEbQDAAEMBWA+Hil1p+KRLoy/6tdf203ycimKfXn4pE+jUf6td90V82Z6r0QNgJmkGcAlEANAAAAAAAIYgGTq9l8BxjYK3ZfADjQ0JDRBoAYFGWYkaZiQHPU1kJlqusjIglIjMtIjMghURBnRMhIAkc9bYdEjnrbAqZ9/or2peD6o8+eg6Jq0p+D6okHpRgBtAAAACb2jObKNXNg+/qr36/lcD4tSV86XF8zo6NQ0VZb5pcl/Jx152iz6+RKGbRh33m/fq+ViK7xiTGVAAAAAIYAACABgAATrLqy4MoYr9mXBgcSZqJhGosg2IBNlGWzDNGWQQqEJlqmsjICUmRmWkQmQRmQkWmRYDkc9Zl5EKxFSPRdE9c/CvM86Up4qVPrx2adOlP3AfoIzzeRukGe0qiST2rUn79h6M1LqGArjKA+LlWvnSzVqjo/dtO7KGMzFZdp6u5bz4efbTy4koxWg5yjTW1qPDez1UIpJJakklwR8TIGGu5Vn4YfV/TmfcECsFxgUACsADExsVgC4xDQAAAAE6/ZlwZQnX7MuDA4kaRhDTINXBILBcoTMM0zDIIVCEi1UhICciMysiM2QRmRZWZFgORz1jokc9YKkOo+pLhbyMlIQlJWjGUnuim38iKlhlZHqch5VbShLTbVp61u6+s83CLjolFp7mmmUVO+oD3EsXDa38Mr+Rx4vKiS6q98vsedjUqJfmS+KQtt27/Muo651nJttv6s3hsPKtLNWiK7UtkVu4lMHkupO104R3vtPgvuegw2HjTioxVl82977y4NUqailGKskrJGwAqAAAAAAASQwAAFYYAK4wEAydfsy4MoTrdmXhfkBwI1FGUaiBsQMQGGZZpmJEEKushItUekhNgTkyMysiUyCEyTKzIsByOesXkc9d6gqbPS9D1oqvwL/I8w2el6KTShU75L5L+RPo9DVowlolGMvEkzkeSKD/AONLg5L6l1WRpVTSOZZGoepzlP7nRRwlOHZhFd6SvzNqY84DYhZw7gMDI0wGJsLjAVgGAAAAAAAAAmDYJAJBNXTW9NGhAfNtbQxxO+dNS1r78yEsJul7mrkEQNyozWxPg19bE3GS1xlyb8gMsmxyktujimvMm6kfWXNARrXvoJSKVJK5GbAxIjMpKRCpUS2rmiCcyLYVMTD14/EiXpL6ozfhpzl5IKrJnLXlqKSVV9mhWf7VD/JonPJmLnqhCHfKTm+S+4HNOqkfTyHjU083VfXsfAhS6KTlpqzlL+3sw5LX7z7mCyOoKyQxdjop12XhWYQwTLxwpUEKrLRmZjhyqpFQ1M0mJUx5gDuJt7B5o80Bpm0YzTSAYAACGAABhyAANIYAAAAAKwwAAAAAQNAAGHQg9cI/CjLwlP2cPgiAAZeBpezp/BH7BHCU1+iC4RSAANrDx3IPQrcAAZdNbjaorcIANKmtw81AADsFgAAQwAAEAAMAAAE0MAEAAB//2Q==",
+    "categoryId": 3,
+    "authorId": 1
+  },
+  {
+    "id": 5,
+    "name": "Leather Wallet",
+    "slug": "leather-wallet",
+    "description": "A slim and stylish wallet made of high-quality leather with multiple compartments.",
+    "price": 65000,
+    "mainImg": "https://images.unsplash.com/photo-1495100497150-fe209c585f50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
+    "categoryId": 1,
+    "authorId": 1
+  }
+]

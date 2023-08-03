@@ -1,0 +1,50 @@
+{
+  "subPackageBuildType": "shared",
+  "pages": [
+    "pages/load-screen/load-screen",
+    "pages/login/login",
+    "pages/tabBar/home-screen/home-screen",
+    "pages/tabBar/user-screen/user-screen",
+    "pages/detail/detail"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/component",
+      "pages": 
+      [
+        "scroll-view/scroll-view"
+      ]
+    }
+  ],
+
+  "window": {
+   
+    "backgroundColor": "#F5F5F9",
+    "pullRefresh": true,
+    "allowsBounceVertical": "YES",
+    "titleBarColor": "#fff",
+    "enableComponentOverlayer": "YES"
+
+  },
+  "tabBar": {
+    "textColor": "#404040",
+    "selectedColor": "#E57C23",
+    "backgroundColor": "#F5F5F9",
+    "items": [
+      {
+        "pagePath": "pages/tabBar/home-screen/home-screen",
+        "icon": "image/home-icon.png",
+        "activeIcon": "image/home-icon.png",
+        "name": "Home"
+      },
+      {
+        "pagePath": "pages/tabBar/user-screen/user-screen",
+        "icon": "image/account-icon.png",
+        "activeIcon": "image/account-icon.png",
+        "name": "Account"
+      }
+   
+      
+    ]
+  }
+}

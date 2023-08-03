@@ -1,0 +1,35 @@
+<view class="container">
+  <notice a:if="{{ error.status }}" className="notice" type="error">
+    {{error.message}}
+  </notice>
+
+  <view id="image-section">
+    <image src="/image/IDEA_logo.jpg" />
+  </view>
+
+  <view id="login-form">
+    <view class="title-form">
+      <text>
+        Login Page
+      </text>
+    </view>
+    <view>
+      <form id="form-container" onSubmit="submitHandler">
+
+        <input name="email" placeholder="username" />
+        <input name="password" password=true placeholder="password" />
+        <view class="buttonSubmit">
+        <button inline form-type="submit">Login</button>
+        </view>
+      </form>
+    </view>
+  </view>
+  <view id="misc-section">
+
+    <view class="misc-list">
+      <icon type="BankcardOutline" />
+      <text>Contact-Support</text>
+    </view>
+  </view>
+
+</view>

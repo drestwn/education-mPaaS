@@ -1,0 +1,21 @@
+
+<view class="container">
+  <view>
+  <image src={{user.image}}/>
+  </view>
+    <view id="card">
+      <text id="fullName">
+        Full Name: {{user.firstName}} {{user.maidenName}} {{user.lastName}}
+      </text>
+      <text id="age">Age: {{user.age}}</text>
+      <text id="birthDate">Birth Date: {{user.birthDate}}</text>
+      <text id="university">University: {{user.university}}</text>
+      <text id="phoneNumber">Phone Number: {{user.phoneNumber}}</text>
+      <text id="ip">IP Number: {{user.ip}}</text>
+      <text id="bankNumber">Bank Number: {{user.bank.cardNumber}}</text>
+
+    </view>
+    </
+    <view>
+
+    </view>

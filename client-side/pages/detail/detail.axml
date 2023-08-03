@@ -1,0 +1,4 @@
+<view a:if="{{ !isLoading }}" id="main-container" style="background-image:url({{photo.src.portrait}})">
+
+  <card user={{user}} ></card>
+</view>

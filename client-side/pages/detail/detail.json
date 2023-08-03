@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "Detail",
+  "allowsBounceVertical":"YES",
+  "transparentTitle": "none",
+  "titleBarColor": "#262833",
+  "usingComponents": {
+    "card":"/components/card/card"
+  }
+}

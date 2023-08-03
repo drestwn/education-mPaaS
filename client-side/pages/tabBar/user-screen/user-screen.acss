@@ -1,0 +1,56 @@
+.container {
+  justify-content: center;
+  padding:2%;
+}
+
+
+#header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bell {
+  font-size: 30px;
+}
+
+#right-header {
+  display: flex;
+  align-items: center;
+}
+
+#right-header button {
+  margin: 0 10px;
+}
+
+#header image {
+  height: 30px;
+  width: 70px;
+  padding-left: 10px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2px;
+  display:flex;
+  flex-direction: row;
+ 
+}
+.containerCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imageProfile{
+  width:100px;
+  height: 100px;
+}
+.dataProfile {
+  font-size: 15px;
+}

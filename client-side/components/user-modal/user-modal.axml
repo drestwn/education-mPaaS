@@ -1,0 +1,50 @@
+<view id="main-container">
+  <text id="title">
+    Terms and Conditions for BNI Mobile Banking App
+  </text>
+  <text id="sub-title">
+    These terms and conditions ("Terms") govern your use of the BNI Mobile Banking App ("App") provided by Bank Negara Indonesia ("BNI"). By accessing or using the App, you agree to be bound by these Terms. If you do not agree with any of these Terms, please refrain from using the App.
+  </text>
+  <text>
+
+
+1. Account Access and Security:
+   a. You must be a BNI account holder to use the App.
+   b. You are responsible for maintaining the confidentiality of your login credentials, such as usernames, passwords, PINs, or any other authentication method provided by BNI.
+   c. You agree not to share your login credentials with anyone else.
+   d. You are solely responsible for any activity or transaction conducted using your account.
+
+2. App Usage:
+   a. The App allows you to access certain banking services provided by BNI, including but not limited to balance inquiry, funds transfers, bill payments, and other services as may be available from time to time.
+   b. You agree to use the App only for lawful purposes and in compliance with all applicable laws and regulations.
+   c. You shall not use the App in a manner that may disrupt or interfere with the proper functioning of the App or BNI's systems.
+
+3. Limitation of Liability:
+   a. BNI shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with the use of the App, including but not limited to loss of data, interruption of business, or any other pecuniary loss.
+   b. BNI shall not be responsible for any unauthorized access to your account or any unauthorized transactions conducted using your account, except where such unauthorized access or transactions result from BNI's negligence or willful misconduct.
+
+4. Privacy and Data Protection:
+   a. BNI respects your privacy and complies with applicable data protection laws. Please refer to BNI's Privacy Policy for information on how BNI collects, uses, and protects your personal information.
+   b. By using the App, you consent to the collection, use, and processing of your personal information by BNI in accordance with BNI's Privacy Policy.
+
+5. Intellectual Property:
+   a. All intellectual property rights in the App, including but not limited to copyrights, trademarks, and trade secrets, are owned by or licensed to BNI.
+   b. You shall not modify, reproduce, distribute, or create derivative works based on the App without BNI's prior written consent.
+
+6. Modifications to the App and Terms:
+   a. BNI reserves the right to modify, suspend, or discontinue the App or any part thereof at any time, with or without notice.
+   b. BNI may update or modify these Terms from time to time. The updated Terms will be effective upon posting on the App or as otherwise notified to you. Your continued use of the App after the posting of the updated Terms constitutes your acceptance of the revised Terms.
+
+7. Governing Law and Jurisdiction:
+   These Terms shall be governed by and construed in accordance with the laws of Indonesia. Any dispute arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of Indonesia.
+
+Please read these Terms carefully before using the BNI Mobile Banking App. If you have any questions or concerns, please contact BNI's customer support.
+  </text>
+
+  <form onSubmit="agreementHandler" id="form" >
+    <checkbox  value={{isAgree.value}} checked={{isAgree.checked}} onChange="checkHandler" />
+    <text>{{isAgree.name}}</text>
+    <button size="default" disabled={{buttonStatus? false : true}} type="primary"  form-type="submit">Continue</button>
+  </form>
+  
+</view>

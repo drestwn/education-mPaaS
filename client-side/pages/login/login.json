@@ -1,0 +1,11 @@
+{
+  "allowsBounceVertical": "NO",
+  "transparentTitle": "always",
+  "usingComponents": {
+    "popup": "antd-mini/es/Popup/index",
+    "toast": "antd-mini/es/Toast/index",
+    "notice": "antd-mini/es/NoticeBar/index",
+    "icon": "antd-mini/es/Icon/index"
+
+  }
+}

@@ -1,0 +1,5 @@
+<view id="main-container" >
+  <image  src="/image/Load.png" />
+</view>
+<view>
+  test</view>
