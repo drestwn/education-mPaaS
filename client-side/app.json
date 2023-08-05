@@ -5,7 +5,10 @@
     "pages/login/login",
     "pages/tabBar/home-screen/home-screen",
     "pages/tabBar/user-screen/user-screen",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/tabBar/add-screen/add-screen",
+    "pages/webview-menu/webview-menu"
+
   ],
   "subPackages": [
     {
@@ -22,8 +25,8 @@
     "backgroundColor": "#F5F5F9",
     "pullRefresh": true,
     "allowsBounceVertical": "YES",
-    "titleBarColor": "#fff",
-    "enableComponentOverlayer": "YES"
+    "titleBarColor": "#fff"
+   
 
   },
   "tabBar": {
@@ -36,6 +39,12 @@
         "icon": "image/home-icon.png",
         "activeIcon": "image/home-icon.png",
         "name": "Home"
+      },
+      {
+        "pagePath": "pages/tabBar/add-screen/add-screen",
+        "icon": "image/pngwing.com.png",
+        "activeIcon": "image/pngwing.com.png",
+        "name": "Add Product"
       },
       {
         "pagePath": "pages/tabBar/user-screen/user-screen",

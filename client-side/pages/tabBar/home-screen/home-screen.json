@@ -1,6 +1,7 @@
 { 
   "defaultTitle":"Home",
   "titleBarColor":"#262833",
+  "allowsBounceVertical":"YES",
   "usingComponents":{
     "icon": "antd-mini/es/Icon/index",
     "button": "antd-mini/es/Button/index",

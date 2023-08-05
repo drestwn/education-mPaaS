@@ -54,3 +54,9 @@
 .dataProfile {
   font-size: 15px;
 }
+.email{
+  font-size:11px;
+}
+.gender{
+  font-size: 11px;;
+}

@@ -2,21 +2,18 @@ const app = getApp()
 
 Page({
   data: {
-    agreementModal: false
+    agreementModal: false,
+    website:"https://www.google.com"
   },
   onLoad() {
-    if (!my.getStorageSync({ key: "accessToken" })) {
-      my.navigateTo({
-        url: "/pages/load-screen/load-screen"
-      })
-    }
+    
    },
   onShow() {
-    if (!my.getStorageSync({ key: "accessToken" })) {
-      my.navigateTo({
-        url: "/pages/load-screen/load-screen"
-      })
-    }
+    // if (my.getStorageSync({ key: "accessToken" })) {
+    //   my.switchTab({
+    //     url: "/pages/tabBar/home-screen/home-screen"
+    //   })
+    // }
 
   },
   submitHandler(e) {
@@ -37,7 +34,7 @@ Page({
         my.setStorageSync({ key: "accessToken", data: result.data.access_token })
         my.setStorageSync({ key: "refreshToken", data: result.data.refreshToken })
 
-        app.globalData.username = result.data.username
+        app.globalData.email = result.data.email
 
         my.switchTab({
           url: '/pages/tabBar/home-screen/home-screen'
@@ -47,8 +44,7 @@ Page({
       },
       fail: (error) => {
         console.log(error);
-        this.setData({ error: { message: error.data.message, status: true } })
-
+        this.setData({ error: { message: error.data.error, status: true } })
       },
       complete: (result) => {
 
@@ -59,6 +55,13 @@ Page({
   },
   handleCloseToast() {
     this.setData({ error: { ...this.data.error, status: false } })
+  },
+  toWebsite(e){
+    let page= this.data. website
+    my.navigateTo({
+      url: "/pages/webview-menu/webview-menu?page=" + page
+    })
+    console.log("yea")
   }
 
 });

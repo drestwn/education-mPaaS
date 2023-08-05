@@ -18,13 +18,9 @@ Page({
   onShow() {
 
   },
-  onPullDownRefresh() {
-    this.getPictures()
-  },
+
   getDetail(id) {
-    my.showLoading({
-      content: 'loading',
-    })
+
 
     app.refreshAccessToken()
     .then((result)=>{

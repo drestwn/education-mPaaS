@@ -14,13 +14,13 @@
             </view>
             <view class="dataProfile">
               <view>
-                <h3>Name: {{users.firstName}}</h3>
+                <text>Name: {{users.firstName}}</text>
               </view>
               <view>
-                <text>Email: {{users.email}}</text>
+                <text class="email">Email: {{users.email}}</text>
               </view>
               <view>
-                <text>Gender: {{users.gender}}</text>
+                <text class="gender">Gender: {{users.gender}}</text>
               </view>
             </view>
             </view>

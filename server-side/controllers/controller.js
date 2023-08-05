@@ -126,7 +126,10 @@ class Controller {
         authorId,
         imgUrl,
       } = req.body;
-
+      console.log(req.body, "dari frontend");
+      if (categoryId === 0 || !categoryId) {
+        throw { name: "DATANOTREADY" };
+      }
       // console.log(sequelize);
       const result = await sequelize.transaction(async (t) => {
         const response = await Product.create(
@@ -137,7 +140,7 @@ class Controller {
             price,
             mainImg,
             categoryId,
-            authorId,
+            authorId: req.idUser.id,
           },
           { transaction: t }
         );

@@ -9,13 +9,13 @@
   <block a:for="{{ listProducts }}" a:for-item="product">
     <view class="card" data-id="{{product.id}}" key="{{product.id}}">
       <view>
-        <h3>{{product.name}}</h3>
+        <text>{{product.name}}</text>
       </view>
       <view>
-        <p>Price: {{product.price}}</p>
+        <text>Price: {{product.price}}</text>
       </view>
       <view>
-        <p class="category">Category: {{product.Category.name}}</p>
+        <text class="category">Category: {{product.Category.name}}</text>
         <view class="deleteButtonCard" onTap='deleteData' data-id="{{product.id}}">
         <icon className="delete" type="DeleteOutline" />
         </view>

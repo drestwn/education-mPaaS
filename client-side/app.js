@@ -3,31 +3,46 @@ App({
   globalData:{
     accessToken: "",
     address: "http://localhost:3000",
-    addressUser:"https://dummyjson.com"
+    addressUser:"https://dummyjson.com",
+    email:""
   },
   onLaunch(options) {
     // 第一次打开
     // options.query == {number:1}
     console.info('App onLaunch');
-    my.showToast({
-      url:"/pages/load-screen/load-screen"
-    })
+    console.log('getSystemInfoSync', my.getSystemInfoSync());
+    console.log('SDKVersion', my.SDKVersion);
+   
   },
   onLoad(){
     my.navigateTo({
-      url:"/pages/login/login"
+      url:"/pages/load-screen/load-screen"
     })
+    if(my.getStorageSync({key:"accessToken"})){
+      my.switchTab({
+        url:"/pages/tabBar/home-screen/home-screen"
+      })
+    }
     
   },
   onShow(options) {
     my.navigateTo({
       url:"/pages/load-screen/load-screen"
     })
-    if (my.getStorageSync({ key: "accessToken" })) {
-      my.switchTab({
-        url: "/pages/tabBar/home-screen/home-screen"
-      })
+    // if (my.getStorageSync({ key: "accessToken" })) {
+    //   my.switchTab({
+    //     url: "/pages/tabBar/home-screen/home-screen"
+    //   })
+    // }
+    let token = my.getStorageSync({key:"accessToken"})
+    console.log(token.data,'ini token')
+    if(!token.data){
+      console.log("xxxxxxx");
+      my.navigateTo({url:"/pages/login/login"})
+    }else{
+      my.switchTab({url:'/pages/tabBar/home-screen/home-screen'})
     }
+
     
   },
   refreshAccessToken(){
@@ -73,5 +88,9 @@ App({
         resolve("fresh")
       }
     })
+  },
+  logOut() {
+    my.clearStorageSync();
+    my.navigateTo({ url: "/pages/login/login" })
   }
 })

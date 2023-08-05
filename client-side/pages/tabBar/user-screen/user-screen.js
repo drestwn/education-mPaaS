@@ -6,6 +6,9 @@ Page({
     isLoading: false
   },
   onLoad() {
+    this.setData({
+      isLoading: true
+    })
     let {
       screenHeight,
       screenWidth
@@ -20,9 +23,12 @@ Page({
 
   },
   onShow() {
-
+    this.setData({
+      isLoading: false
+    })
   },
   getUserData() {
+    
     my.request({
       url: app.globalData.addressUser + "/users/?limit=10",
       method: "get",

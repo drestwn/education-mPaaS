@@ -1,0 +1,39 @@
+<view class="container">
+  <notice a:if="{{ data.error }}" className="notice" type="error">
+    {{error.data.message}}
+  </notice>
+
+  <view id="header">
+    <image mode="scaleToFill" src="/image/IDEA_logo.jpg" />
+    <view id="right-header">
+      <text> Please input your data below!</text>
+    </view>
+  </view>
+  
+  <view class='continerForm'>
+    <form id="form-container" onSubmit="submitHandler">
+      <input name="name" placeholder="Product Name" />
+      <input name="description" placeholder="Description" />
+      <input name="price" placeholder="Price" />
+      <input name="mainImg" placeholder="MainImg" />
+      <input name="imgUrl" placeholder="imgUrl" />
+
+      <picker
+        onChange="bindObjPickerChange"
+        value="{{id}}"
+        range="{{listCategory}}"
+        range-key="name"
+      >
+        <view class="row">
+          <view class="row-title">Category</view>
+          <view class="row-extra">select:{{listCategory[id].name}}</view>
+          <image class="row-arrow" src="/image/arrowright.png" mode="aspectFill" />
+        </view>
+      </picker>
+
+      <view class="buttonSubmit">
+        <button inline form-type="submit">Add Product</button>
+      </view>
+    </form>
+  </view>
+</view>

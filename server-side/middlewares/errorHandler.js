@@ -36,6 +36,9 @@ function dataErrors(err, req, res, next) {
   } else if (err.name === "SequelizeUniqueConstraintError") {
     //error detail Products gak ada ID
     code = 400;
+  } else if (err.name === "DATANOTREADY") {
+    code = 404;
+    msg = "Please fill All Data";
   }
   res.status(code).json({
     error: msg,

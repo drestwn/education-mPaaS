@@ -14,7 +14,7 @@ router.get("/user", Controller.renderAdmin);
 
 router.get("/client/Product/:id", Controller.renderProductClient);
 
-router.post("/createProduct", loggedAuth, Controller.createProduct);
+router.post("/createproduct", loggedAuth, Controller.createProduct);
 router.post("/createCategory", loggedAuth, Controller.createCategory);
 
 router.delete("/product/:id", loggedAuth, Controller.deleteProductById);

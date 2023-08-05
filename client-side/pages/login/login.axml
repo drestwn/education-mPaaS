@@ -3,7 +3,7 @@
     {{error.message}}
   </notice>
 
-  <view id="image-section">
+  <view id="image-section" onTap="toWebsite">
     <image src="/image/IDEA_logo.jpg" />
   </view>
 
@@ -27,7 +27,7 @@
   <view id="misc-section">
 
     <view class="misc-list">
-      <icon type="BankcardOutline" />
+      <icon type="BankcardOutline" class="misc-listicon"/>
       <text>Contact-Support</text>
     </view>
   </view>

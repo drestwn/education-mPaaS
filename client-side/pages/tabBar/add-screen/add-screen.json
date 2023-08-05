@@ -1,0 +1,15 @@
+{ 
+  "defaultTitle":"Add Product",
+  "titleBarColor":"#262833",
+  "allowsBounceVertical": "NO",
+
+  "usingComponents":{
+    "icon": "antd-mini/es/Icon/index",
+    "button": "antd-mini/es/Button/index",
+    "button-custom" : "@vermillionhayate/npm-component-test/components/button-icon-1/button-icon-1",
+    "popup": "antd-mini/es/Popup/index",
+    "toast": "antd-mini/es/Toast/index",
+    "notice": "antd-mini/es/NoticeBar/index"   
+  }
+
+}

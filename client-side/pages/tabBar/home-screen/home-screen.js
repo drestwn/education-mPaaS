@@ -4,12 +4,19 @@ Page({
     listProducts: []
   },
   onLoad() {
-    if (!my.getStorageSync({ key: "accessToken" })) {
+    // if (!my.getStorageInfoSync({ key: "accessToken" })) {
+    //   my.navigateTo({
+    //     url: "/pages/login/login"
+    //   })
+    // }
+
+    var res = my.getStorageInfoSync();
+    console.log(res)
+    if(res.keys.length===0){
       my.navigateTo({
-        url: "/pages/login/login"
+        url:"/pages/login/login"
       })
     }
-  
     let {
       screenHeight,
       screenWidth
@@ -23,7 +30,7 @@ Page({
     this.getData()
   },
   onShow() {
-  
+
     let token = my.getStorageSync({
       key: "accessToken"
     })
@@ -36,24 +43,31 @@ Page({
     }
 
   },
+  onPullDownRefresh() {
+    console.log("refresh")
+    this.onLoad()
+    my.stopPullDownRefresh()
+  },
   getData() {
-    my.request({
-      url: app.globalData.address + "/product",
-      method: "get",
-      dataType: "json",
-      success: (res) => {
-        console.log(res)
-        this.setData({
-          listProducts: res.data
-        })
-      },
-      fail: (err) => {
-        console.log(err);
-      },
-      complete: () => {
-        my.hideLoading();
+    return new Promise((resolve, reject) => {
+      my.request({
+        url: app.globalData.address + "/product",
+        method: "get",
+        dataType: "json",
+        success: (res) => {
+          console.log(res)
+          this.setData({
+            listProducts: res.data
+          })
+        },
+        fail: (err) => {
+          console.log(err);
+        },
+        complete: () => {
+          my.hideLoading();
 
-      }
+        }
+      })
     })
   },
   deleteData(e) {
@@ -97,9 +111,8 @@ Page({
       }
     })
   },
-  logOut(){
+  logOut() {
     my.clearStorageSync();
-    my.navigateTo({url:"/pages/login/login"})
-
+    my.redirectTo({ url: "/pages/login/login" })
   }
 });
